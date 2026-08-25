@@ -14,14 +14,14 @@
 # student("Saad", 22) 
 
 
-# def calculate(a, b):
-#     add = a + b
-#     sub = a - b
-#     multi = a * b
-#     div = a / b
-#     return add,sub,multi,div
-# result = calculate(10,5)
-# print(result)    
+def calculate(a, b):
+    add = a + b
+    sub = a - b
+    multi = a * b
+    div = a / b
+    return add,sub,multi,div
+result = calculate(10,5)
+print(result)    
 
 
 

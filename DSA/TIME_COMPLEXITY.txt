@@ -1,0 +1,28 @@
+1. Means: How the amount of work an algorithm performs grows as the input size grows.
+
+2. What does n mean?
+
+n = size of the input.
+
+Example:
+
+numbers = [10, 20, 30, 40, 50]
+
+There are 5 elements.
+
+Therefore:
+
+n = 5
+
+If: 
+
+numbers = [10, 20, 30, 40, 50, 60, 70]
+
+then:
+
+n = 7
+
+So:
+
+n = number of input elements
+

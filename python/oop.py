@@ -122,20 +122,22 @@
 # sound() --> same sound, different behaviour
 
 # Polymorphism with inheritance
-class Animal:
-    def sound(self):
-        print("Animal Sound")
-class Dog(Animal):
-    def sound(self):
-        print("bark")
-class Cat(Animal):
-    def sound(self):
-        print("Meow")
+# class Animal:
+#     def sound(self):
+#         print("Animal Sound")
+# class Dog(Animal):
+#     def sound(self):
+#         print("bark")
+# class Cat(Animal):
+#     def sound(self):
+#         print("Meow")
 
-animal = Animal()
-dog = Dog()
-cat = Cat()
+# animal = Animal()
+# dog = Dog()
+# cat = Cat()
 
-animal.sound()
-dog.sound()
-cat.sound()
+# animal.sound()
+# dog.sound()
+# cat.sound()
+
+
