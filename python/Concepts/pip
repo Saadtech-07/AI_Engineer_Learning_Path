@@ -1,0 +1,17 @@
+pip is Python's package installer.
+
+It allows you to install, upgrade, remove, and inspect Python packages.
+
+For example, later you'll need packages like:
+
+requests
+numpy
+pandas
+fastapi
+uvicorn
+transformers
+torch
+
+You can install them using:
+
+pip install requests

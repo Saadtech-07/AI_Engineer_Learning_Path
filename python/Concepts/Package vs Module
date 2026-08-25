@@ -1,0 +1,13 @@
+.py file = module
+
+folder containing modules = package
+
+
+
+Ex:
+Package
+│
+├── Module 1 → calculator.py
+├── Module 2 → users.py
+├── Module 3 → payment.py
+└── Module 4 → main.py

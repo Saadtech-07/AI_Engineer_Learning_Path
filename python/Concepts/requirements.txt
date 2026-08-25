@@ -1,0 +1,1 @@
+requirements.txt is a file that contains the Python packages and versions required by a project.

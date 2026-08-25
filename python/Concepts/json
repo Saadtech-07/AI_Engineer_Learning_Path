@@ -1,0 +1,131 @@
+1. Definition
+
+JSON = JavaScript Object Notation.
+
+It's a common text format for exchanging structured data.
+
+Example:
+
+{
+  "name": "Saad",
+  "age": 22,
+  "role": "AI Engineer"
+}
+
+It looks very similar to a Python dictionary.
+
+But they are not the same thing.
+
+2. Python dictionary
+user = {
+    "name": "Saad",
+    "age": 22
+}
+
+This is a Python object.
+
+JSON is a text/data format:
+
+{
+  "name": "Saad",
+  "age": 22
+}
+3. Python → JSON
+
+Python provides:
+
+import json
+
+Use:
+
+user = {
+    "name": "Saad",
+    "age": 22
+}
+
+json_data = json.dumps(user)
+
+print(json_data)
+
+Result:
+
+{"name": "Saad", "age": 22}
+
+dumps() means:
+
+Convert Python object → JSON string.
+
+4. JSON → Python
+
+Use:
+
+json.loads()
+
+Example:
+
+import json
+
+data = '{"name": "Saad", "age": 22}'
+
+user = json.loads(data)
+
+print(user)
+print(user["name"])
+
+Now user is a Python dictionary.
+
+Think:
+
+Python dict
+    ↓
+json.dumps()
+    ↓
+JSON string
+
+and:
+
+JSON string
+    ↓
+json.loads()
+    ↓
+Python dict
+5. dump() vs dumps()
+
+This is important.
+
+dumps
+
+Python object → JSON string
+
+json.dumps(data)
+dump
+
+Python object → JSON file
+
+json.dump(data, file)
+
+Similarly:
+
+loads
+
+JSON string → Python object
+
+json.loads(data)
+load
+
+JSON file → Python object
+
+json.load(file)
+
+Remember:
+
+s = string
+no s = file
+
+So:
+
+dumps → string
+dump  → file
+
+loads → string
+load  → file

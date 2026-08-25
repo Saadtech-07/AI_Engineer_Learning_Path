@@ -1,0 +1,100 @@
+A virtual environment creates an isolated Python environment for a project.
+
+Why do we need venv?
+
+Imagine you have two projects.
+
+Project A — AI Chatbot
+numpy 2.x
+requests 2.x
+fastapi
+
+Project B — Old ML Project
+numpy 1.x
+requests 1.x
+
+If you install everything globally:
+Global Python
+    ↓
+numpy 1.x
+numpy 2.x
+???
+You can get dependency conflicts.
+
+
+With virtual environments:
+Project A
+└── venv
+    └── numpy 2.x
+
+
+Project B
+└── venv
+    └── numpy 1.x
+
+No conflict.
+
+
+Create a virtual environment
+
+Create a project:
+
+mkdir ai_project
+cd ai_project
+
+Now:
+
+python -m venv .venv
+
+This creates:
+
+ai_project/
+│
+└── .venv/
+Why .venv?
+
+It's simply a common convention.
+
+You could call it:
+
+venv
+environment
+myenv
+
+But .venv is very common in modern Python projects.
+
+What does .venv contain?
+
+You don't need to manually modify it.
+
+Conceptually:
+
+.venv/
+│
+├── Python environment
+├── pip
+├── installed packages
+└── environment configuration
+
+
+1.  Activate the environment — Windows
+
+Since you're using Windows/PowerShell, you'll commonly use:
+
+.venv\Scripts\Activate.ps1
+
+After activation, your terminal should show something like:
+
+(.venv) PS C:\...\ai_project>
+
+The important part is:
+
+(.venv)
+
+That tells you the virtual environment is active.
+
+2. Activate — Command Prompt
+
+If you're using CMD instead of PowerShell:
+
+.venv\Scripts\activate
